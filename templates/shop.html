@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Игры</h2> <br>
+  {% for game in games%}
+  <div class="col-md6 border rounded">
+      <h3>{{game.title}}</h3> <br>
+      <h4>Цена: {{game.price}}</h4> <br>
+      <h4>Жанр: {{game.genre}}</h4> <br>
+      <h4>Разработчик: {{game.studio}}</h4> <br>
+      <div>
+          {{game.about}}
+      </div> <br>
+  </div>
+  {% endfor %}
+{% endblock %}

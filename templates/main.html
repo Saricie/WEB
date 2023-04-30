@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Приветствуем в нашем интернет-магазине!</h2> <br>
+    <form action="/" method="post">
+        <h4>Вы можете войти в свой аккаунт</h4>
+        <input type="submit" name="login" value="Войти в аккаунт">
+        <h4>Или зарегистрироваться</h4>
+        <input type="submit" name="registrate" value="Зарегистрироваться">
+    </form>
+{% endblock %}
